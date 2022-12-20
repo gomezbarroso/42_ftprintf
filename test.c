@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_puthexnbr_fd.c                                  :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 13:45:04 by agomez-b          #+#    #+#             */
-/*   Updated: 2022/12/20 15:22:33 by agomez-b         ###   ########.fr       */
+/*   Created: 2022/12/20 14:02:20 by agomez-b          #+#    #+#             */
+/*   Updated: 2022/12/20 15:20:43 by agomez-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include <stdlib.h>
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(1, &c, 1);
+}
 
 void	ft_puthexnbr_fd(size_t n, char c, int fd)
 {
@@ -25,4 +31,10 @@ void	ft_puthexnbr_fd(size_t n, char c, int fd)
 		ft_putchar_fd(hexa_str[n % 16], fd);
 	if (c == 'X')
 		ft_putchar_fd(hexa_str_caps[n % 16], fd);
+}
+
+int	main(void)
+{
+	ft_puthexnbr_fd(25828, 'X', 1);
+	return (0);
 }

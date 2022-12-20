@@ -6,7 +6,7 @@
 /*   By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 13:08:18 by agomez-b          #+#    #+#             */
-/*   Updated: 2022/12/16 13:53:26 by agomez-b         ###   ########.fr       */
+/*   Updated: 2022/12/20 15:22:53 by agomez-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putunbr_fd(int n, int fd);
-int		ft_puthexnbr_fd(size_t n, char c, int fd);
+void	ft_puthexnbr_fd(size_t n, char c, int fd);
 
 #endif

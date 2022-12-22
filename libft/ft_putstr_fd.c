@@ -6,13 +6,13 @@
 /*   By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:00:55 by agomez-b          #+#    #+#             */
-/*   Updated: 2022/11/08 14:17:39 by agomez-b         ###   ########.fr       */
+/*   Updated: 2022/12/22 21:54:40 by agomez-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
@@ -22,4 +22,5 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i ++;
 	}
+	return (0);
 }

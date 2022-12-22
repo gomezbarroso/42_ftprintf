@@ -6,13 +6,13 @@
 /*   By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 13:26:21 by agomez-b          #+#    #+#             */
-/*   Updated: 2022/12/16 13:46:33 by agomez-b         ###   ########.fr       */
+/*   Updated: 2022/12/22 21:55:06 by agomez-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putunbr_fd(int n, int fd)
+int	ft_putunbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
 	{
@@ -28,4 +28,5 @@ void	ft_putunbr_fd(int n, int fd)
 	}
 	if (n < 10)
 		ft_putchar_fd((n + 48), fd);
+	return (0);
 }

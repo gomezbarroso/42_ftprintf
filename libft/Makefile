@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: agomez-b <agomez-b@student.42.fr>          +#+  +:+       +#+         #
+#    By: agomez-b <gomezbarroso.a@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/23 13:56:41 by agomez-b          #+#    #+#              #
-#    Updated: 2022/12/16 13:53:52 by agomez-b         ###   ########.fr        #
+#    Updated: 2022/12/25 22:24:50 by agomez-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC =	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 		ft_strjoin.c ft_split.c ft_strtrim.c ft_itoa.c \
 		ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
-		ft_putunbr.c ft_puthexnbr_fd.c
+		ft_putunbr_fd.c ft_puthexnbr_fd.c
 		
 OBJS = $(SRC:.c=.o)	
 
